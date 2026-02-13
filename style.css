@@ -28,6 +28,14 @@ header {
         padding: 89px 183px;
         font-size: 56px;
         margin: 14px 18px;
+        font-weight: 500;
+
+        & h1, p{
+            font-weight: 500;
+            font-size: 56px;
+        }
+
+
     }
 
     & .content{
@@ -61,5 +69,51 @@ header {
         background-color: var(--btn-color);
         padding: 10px 45px ;
         border-radius: 100px;
+        text-align: center;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+    padding: 121.5px;
+    justify-content: space-between;
+    
+    & .sobreNos{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        width: 291px;
+
+        & p{
+            font-size: 14px;
+            line-height: 38px;
+        }
+    }
+    & .entreEmContato{
+        display: flex;
+        flex-direction: column;
+        gap: 33px;
+        width: 321px;
+        
+
+        & .contatos{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 14px;
+
+        & a{
+            text-decoration: underline;
+            color: var(--bg-text);
+        }
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        flex-direction: column;
     }
 }
