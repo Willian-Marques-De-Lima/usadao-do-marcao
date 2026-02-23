@@ -20,9 +20,9 @@ header {
     justify-content: center;
 }
 
-.home{
+.home {
 
-    & .title{
+    & .title {
         display: flex;
         justify-content: space-between;
         padding: 89px 183px;
@@ -30,7 +30,8 @@ header {
         margin: 14px 18px;
         font-weight: 500;
 
-        & h1, p{
+        & h1,
+        p {
             font-weight: 500;
             font-size: 56px;
         }
@@ -38,19 +39,19 @@ header {
 
     }
 
-    & .content{
+    & .content {
         display: flex;
         margin: 88.95px;
         gap: 16px;
         flex-wrap: wrap;
         justify-content: center;
-        
 
 
-            }
-        }
 
-.contact{
+    }
+}
+
+.contact {
     display: flex;
     flex-direction: column;
     gap: 121px;
@@ -58,16 +59,16 @@ header {
     background-color: var(--bg-color2);
     padding: 76px;
 
-    & h2{
+    & h2 {
         font-size: 56px;
         font-weight: normal;
     }
 
-    & a{
+    & a {
         font-size: 56px;
         color: var(--bg-text);
         background-color: var(--btn-color);
-        padding: 10px 45px ;
+        padding: 10px 45px;
         border-radius: 100px;
         text-align: center;
     }
@@ -79,41 +80,92 @@ footer {
     gap: 77px;
     padding: 121.5px;
     justify-content: space-between;
-    
-    & .sobreNos{
+
+    & .sobreNos {
         display: flex;
         flex-direction: column;
         gap: 19px;
         width: 291px;
 
-        & p{
+        & p {
             font-size: 14px;
             line-height: 38px;
         }
     }
-    & .entreEmContato{
+
+    & .entreEmContato {
         display: flex;
         flex-direction: column;
         gap: 33px;
         width: 321px;
-        
 
-        & .contatos{
+
+        & .contatos {
             display: flex;
             flex-direction: column;
             gap: 20px;
             font-size: 14px;
 
-        & a{
-            text-decoration: underline;
-            color: var(--bg-text);
-        }
+            & a {
+                text-decoration: underline;
+                color: var(--bg-text);
+            }
         }
     }
 }
 
 @media screen and (max-width: 900px) {
+    header {
+        #logo {
+            max-width: 300px;
+        }
+
+    }
+
+    .home {
+        & .title {
+            flex-direction: column;
+            align-items: center;
+
+            & h1,
+            p {
+                font-size: 50px;
+                text-align: center;
+
+            }
+        }
+
+        & img {
+            max-width: 400px;
+        }
+    }
+    
+    .contact{
+        text-align: center;
+        
+        & h2{
+            font-size: 40px;
+        }
+        & a{
+            font-size: 35px;
+        }
+    }
+
     footer {
         flex-direction: column;
+
+        & .sobreNos {
+            align-items: center;
+            text-align: center;
+        }
+
+        & img {
+            max-width: 300px;
+        }
+
+        & .entreEmContato{
+            align-items: center;
+            text-align: center;
+        }
     }
 }
