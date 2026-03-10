@@ -133,10 +133,14 @@ footer {
                 text-align: center;
 
             }
+            
         }
 
         & img {
-            max-width: 400px;
+            max-width: 350px;
+        }
+        & h2{
+            text-align: center;
         }
     }
     
